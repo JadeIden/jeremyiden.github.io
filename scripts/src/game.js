@@ -19,7 +19,15 @@ Game = {
                     this.destroy();
                 }
             });
+        var tile2 = Crafty.e("2D, DOM, dirt_tile, Mouse")
+            .attr("z", 1)
+            .bind("click", function(e){
+                if(e.button == 2){
+                    this.destroy();
+                }
+            });
 
         iso.place(1, 1, 0, tile1);
+        iso.place(2, 1, 0, tile2);
     }
 };
