@@ -21,7 +21,5 @@ Game = {
             });
 
         iso.place(1, 1, 0, tile1);
-        iso.place(2, 1, 0, tile1);
-        iso.place(3, 1, 0, tile1);
     }
 };
