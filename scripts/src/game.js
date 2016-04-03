@@ -17,5 +17,7 @@ Game = {
                     this.destroy();
                 }
             });
+
+        iso.place(2, 1, 0, tile1);
     }
 };
