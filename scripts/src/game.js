@@ -1,6 +1,6 @@
 Game = {
     start: function(){
-        Crafty.init(480, 320);
+        Crafty.init(800, 600);
         Crafty.background('white');
 
         Crafty.sprite(128, "images/magic.png", {
