@@ -7,17 +7,22 @@ Game = {
             wizard: [0,0,0,0]
         });
 
+        Crafty.sprite(256, 128, "images/dirt.png", {
+            dirt_tile: [0,0,0,0]
+        });
+
         var iso = Crafty.isometric.size(128);
-        var tile1 = Crafty.e("2D, DOM, wizard, Mouse, Fourway")
+        var tile1 = Crafty.e("2D, DOM, dirt, Mouse")
             .attr("z", 1)
             .areaMap([64,0],[128,32],[128,96],[64,128],[0,96],[0,32])
-            .fourway(200)
             .bind("click", function(e){
                 if(e.button == 2){
                     this.destroy();
                 }
             });
 
+        iso.place(1, 1, 0, tile1);
         iso.place(2, 1, 0, tile1);
+        iso.place(3, 1, 0, tile1);
     }
 };
