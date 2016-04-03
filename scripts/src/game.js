@@ -7,7 +7,7 @@ Game = {
             wizard: [0,0,0,0]
         });
 
-        var iso = Crafty.isometric.init(128);
+        var iso = Crafty.isometric.size(128);
         var tile1 = Crafty.e("2D, DOM, wizard, Mouse")
             .attr("z", 1)
             .areaMap([64,0],[128,32],[128,96],[64,128],[0,96],[0,32])
